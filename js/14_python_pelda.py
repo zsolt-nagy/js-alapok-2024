@@ -1,8 +1,10 @@
 def reverse_string_2(str):
     result = ""
 
-    for i in range(len(str) - 1, -1, -1):
-        result += str[i]
+    i = 1
+    while i <= len(str):
+        result += str[-i]
+        i += 1
     
     return result
 
